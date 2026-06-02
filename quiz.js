@@ -206,7 +206,7 @@ function skipAudio(slideNum, fieldId) {
   }
 }
 
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxhtEQCSBDXxp-Grji-SKSOjsyhNtLzgd6KbISzz7cFfmFCcJCreYvvziosyR-Th9gI2A/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxUvMAlzzxm3V6RJb-veikVvVs5oExOXtApsA2U4DCITjImwIIP_mnfMDjkigFUyY8t/exec";
 
 const KIDS_SLIDES  = [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26];
 const TEENS_SLIDES = [38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,66];
@@ -429,7 +429,7 @@ function buildReportHTML(d, R) {
     + reqRow('ПРИЧИНА ОБРАЩЕНИЯ', d.reqReason)
     + reqRow('БЕСПОКОИТ', d.reqWorry)
     + reqRow('ОПЫТ С КУРСАМИ', d.reqExp)
-    + reqRow('ХОЧЕТ ЧЕРЕЗ 3–6 МЕС', d.reqWant)
+    + reqRow('ХОЧЕТ ПОЛУЧИТЬ', d.reqWant)
     + reqRow('КРИТЕРИЙ ВЫБОРА', d.reqCriterion)
     + ((d.notes && d.notes!=='нет') ? reqRow('ПОЖЕЛАНИЯ', d.notes) : '');
   var parentReq = reqRows
